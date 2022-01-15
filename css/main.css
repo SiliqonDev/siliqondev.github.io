@@ -139,7 +139,6 @@ a:hover {
 /* End Navbar */
 
 #head {
-	background-image: url("https://www.wallpapertip.com/wmimgs/83-838145_code-wallpaper-hd.png");
 	margin: 0;
 	padding: 222px 0px 222px 0px;
 	text-align: center;
@@ -194,13 +193,11 @@ a:hover {
 }
 
 #banner {
-	background-image: url("https://i.imgur.com/XL2PAd3.png");
 	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
 
 #banner2 {
-	background-image: url("https://i.imgur.com/8P27W9N.png");
 	padding: 75px 0px 75px 0px;
 	text-align: center;
 }

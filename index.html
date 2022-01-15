@@ -35,6 +35,7 @@
 			  <a href="#head">Header</a>
 			  <a href="#about">About</a>
 			  <a href="#portfolio">Portfolio</a>
+			  <a href="https://wonkypigs.github.io/bot.html">Invite Bot</a>
 		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 	</div>
@@ -42,8 +43,8 @@
 
 	<!-- Header (Banner) -->
 	<header id="head" class="parallax">
-		<h1><font color="black">I am a developer</font></h1>
-		<h3><font color="black">seriously, not kidding!</font></h3>
+		<h1><font color="white">I am a developer</font></h1>
+		<h3><font color="white">seriously, not kidding!</font></h3>
 	</header>
 	<!-- End Header -->
 
@@ -51,7 +52,6 @@
 	<section id="about">
 		<h1>About Me</h1>
 		<p>Just some info about me</p>
-		<hr>
 		<!-- First row -->
 		<div class="row features">
 			<div class="col">
@@ -82,8 +82,9 @@
 	<!-- End Banner 1 -->
 
 	<!-- Portfolio Section -->
-	<section id="portfolio">
-		<hr>
+	<section id="portfolio" class="container">
+		<br>
+		<br>
 		<div class="row fixed-width">
 			<div class="col-md mode">
 				<h2><i class="fab fa-android"></i> RPG Discord Bot</h2>
@@ -98,17 +99,16 @@
 				</p>
 			</div>
 			<div class="col-md img">
-				<img class="res-img" src="img/rpg_unlimited.png">
+				<img class="res-img img-fluid" src="img/rpg_unlimited.png">
 			</div>	
 		</div>
 	</section>
 		<br>
-		<hr>
 		<br>
-	<section class="gray">
+	<section class="container">
 		<div class="row fixed-width">
 				<div class="col-md img">
-					<img class="res-img" src="img/marvel_ores.png">
+					<img class="res-img img-fluid" src="img/marvel_ores.png">
 				</div>
 			<div class="col-md mode">
 				<h2><i class="fas fa-microchip"></i> Marvel Ores Mod</h2>
@@ -127,14 +127,13 @@
 				</p>
 			</div>
 		</div>
-		<br>
-		<hr>
-		<br>
 	</section>
-		<!-- Start Third Gamemode -->
+		<br>
+		<br>
+	<section class="container">
 		<div class="row fixed-width">
 			<div class="col-md mode">
-				<h2>Music Discs Resource Pack</h2>
+				<h2><i class="fas fa-music"></i> Music Discs Resource Pack</h2>
 				<p>This resource pack changes the normal Minecraft music disc songs into meme songs!<br>
 					The changes made are as follows -<br>
 					<br>
@@ -148,15 +147,13 @@
 					<b>And many more...</b>
 				</p>
 			</div>
-			<!-- Image Third Gamemode -->
 			<div class="col-md img">
-				<img class="res-img" src="img/meme_music_discs.png">
+				<img class="res-img img-fluid" src="img/meme_music_discs.png">
 			</div>
 		</div>
-		<br>
-		<hr>
-		<br>
 	</section>
+		<br>
+		<br>
 	<!-- End Portfolio Section -->
 
 	<!-- Start Second Banner -->
@@ -177,31 +174,26 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
+	<!-- Smooth Scrolling Script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 		  // Add smooth scrolling to all links
 		  $("a").on('click', function(event) {
 
-		    // Make sure this.hash has a value before overriding default behavior
 		    if (this.hash !== "") {
-		      // Prevent default anchor click behavior
 		      event.preventDefault();
 
 		      // Store hash
 		      var hash = this.hash;
 
-		      // Using jQuery's animate() method to add smooth page scroll
-		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 		      $('html, body').animate({
 		        scrollTop: $(hash).offset().top
 		      }, 100, function(){
-		   
-		        // Add hash (#) to URL when done scrolling (default click behavior)
+
 		        window.location.hash = hash;
 		      });
-		    } // End if
+		    }
 		  });
 		});
 	</script>
@@ -235,6 +227,61 @@
 	    document.body.scrollTop = 0;
 	    document.documentElement.scrollTop = 0;
 	}
+	</script>
+
+	<!-- Vanta script for head section -->
+	<script src="js/bootstrap/three.r119.min.js"></script>
+	<script src="js/bootstrap/vanta.rings.min.js"></script>
+	<script>
+	VANTA.RINGS({
+  		el: "#head",
+  		mouseControls: true,
+		touchControls: true,
+		gyroControls: true,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		backgroundColor: 0x2a4564,
+		color: 0x20f09a
+	})
+	</script>
+
+	<!-- Vanta script for banner 1 -->
+	<script src="js/bootstrap/three.r119.min.js"></script>
+	<script src="js/bootstrap/vanta.waves.min.js"></script>
+	<script>
+	VANTA.WAVES({
+	el: "#banner",
+	mouseControls: true,
+	touchControls: true,
+	gyroControls: false,
+	minHeight: 200.00,
+	minWidth: 200.00,
+	scale: 1.00,
+	scaleMobile: 1.00,
+	color: 0x7822c,
+	shininess: 0.00,
+	waveHeight: 20.00,
+	waveSpeed: 0.50,
+	zoom: 1
+	})
+	</script>
+
+	<!-- Vanta script for banner 2 -->
+	<script src="js/bootstrap/three.r119.min.js"></script>
+	<script src="js/bootstrap/vanta.net.min.js"></script>
+	<script>
+	VANTA.NET({
+	el: "#banner2",
+	mouseControls: true,
+	touchControls: true,
+	gyroControls: false,
+	minHeight: 200.00,
+	minWidth: 200.00,
+	scale: 1.00,
+	scaleMobile: 1.00
+	})
 	</script>
 
 </body>
