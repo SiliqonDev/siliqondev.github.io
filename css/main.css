@@ -247,15 +247,15 @@ footer {
 	color: white;
 }
 
-.footer {
+.the-footer {
 	max-width: 1280px;
 	margin: 0 auto;
 	float: none;
-	padding-top: 66px;
-	padding-bottom: 66px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.the-footer {
+.contact-info {
 	color: #ffffff;
 	margin: 0;
 	margin-bottom: 0;
