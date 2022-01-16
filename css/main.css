@@ -22,7 +22,7 @@ hr {
 }
 
 p {
-	font-family: 'Lato', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -81,7 +81,7 @@ a:hover {
 .topnav {
 	list-style-type: none;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(36, 32, 32);
     box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.20);
     transition: all .2s ease-in;
     font-weight: 700;
@@ -91,7 +91,7 @@ a:hover {
 .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 24px 26px;
     text-decoration: none;
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .topnav a:hover {
-    color: #3498db;
+    color: #155ada;
 }
 
 .topnav .icon {
@@ -140,7 +140,7 @@ a:hover {
 
 #head {
 	margin: 0;
-	padding: 222px 0px 222px 0px;
+	padding: 130px 0px 200px 0px;
 	text-align: center;
 	color: white;
 }
@@ -170,13 +170,13 @@ a:hover {
 	margin-top: 15px;
 }
 
-#about .features {
+#about .about-me {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding-top: 66px;
+	padding-top: 60px;
 }
 
-#about .feature {
+#about .about {
 	font-size: 60px;
 	color: #1c2630;
 	margin-top: 17px;
@@ -249,11 +249,20 @@ footer {
 
 .footer {
 	max-width: 1280px;
-	text-align: center;
 	margin: 0 auto;
 	float: none;
 	padding-top: 66px;
 	padding-bottom: 66px;
+}
+
+.the-footer {
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: default;
 }
 
 @media screen and (min-width: 800px) {
