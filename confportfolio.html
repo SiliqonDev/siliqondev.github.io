@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Config Portfolio</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<!-- Favicon -->
+	<link rel="icon" href="img/pepepat.gif">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			  <!-- <a href="#head">Top</a> -->
+			  <a href="/index.html">Main Website</a>
+			  <a href="https://discord.com/oauth2/authorize?client_id=912282357409648660&permissions=277025646672&scope=bot%20applications.commands">Invite RPG Bot</a>
+			  <a href="/review_form/index.html">Contact Me</a>
+		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+	<!-- End Navbar -->
+
+	<!-- Header (Banner) -->
+	<header id="head" class="parallax">
+		<h1><font color="white">Configuration and Setup</font></h1>
+		<h3><font color="white">This is what I can do in server configuration and setup</font></h3>
+	</header>
+	<!-- End Header -->
+
+	<!-- Portfolio Section -->
+	<br>
+	<hr>
+	<section class="container" id="confportfolio">
+		<br>
+		<div class="row fixed-width">
+			<div class="col-md img">
+				<img class="img-fluid" src="img/custom_hud.png" alt="custom HUD">
+				<img class="img-fluid" src="img/custom_tab.png" alt="custom Tab">  
+				<img class="img-fluid" src="img/custom_bossbar.png" alt="custom Bossbar">
+				<figcaption>Custom Animated HUD, Custom Animated Tab and Custom Animated Bossbar</figcaption>
+				<br>
+				<hr>
+				<br>
+				<img class="res-img img-fluid" src="img/hologram_page_1.png" alt="hologram page 1">
+				<img class="res-img img-fluid" src="img/hologram_page_2.png" alt="hologram page 2">
+				<figcaption>Custom Multi-page holograms with placeholder and color support</figcaption>
+				<br>
+				<hr>
+				<br>
+				<img class="res-img img-fluid" src="img/world_gen_1.png" alt="world gen 1">
+				<img class="res-img img-fluid" src="img/world_gen_2.png" alt="world gen 2">
+				<img class="res-img img-fluid" src="img/world_gen_3.png" alt="world gen 3">
+				<figcaption>Custom world generation with multiple new biomes</figcaption>
+				<br>
+				<hr>
+				<br>
+				<video class="res-img img-fluid" src="img/crate_sample_1.mp4" controls>Your browser does not support videos</video>
+				<figcaption>Custom crate animation with rewards</figcaption>
+				<br>
+				<hr>
+				<br>
+			</div>	
+		</div>
+	</section>
+		<br>
+	<!-- End Portfolio Section -->
+
+	<!-- Start Second Banner -->
+	<section id="banner2" class="parallax">
+		<h1>Contact me through discord!</h1>
+		<h2>WonkyPigs#0001</h2>
+	</section>
+	<!-- End Second Banner -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="the-footer">
+			<div class="contact-info">
+				<p><i class="fab fa-discord"></i> WonkyPigs#0001</p>
+				<p><i class="fab fa-github"></i> WonkyPigs</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Smooth Scrolling Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    if (this.hash !== "") {
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 100, function(){
+
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+	</script>
+	<!-- End Smooth Scrolling Script -->
+
+	<!-- Vanta script for head section -->
+	<script src="js/bootstrap/three.r119.min.js"></script>
+	<script src="js/bootstrap/vanta.rings.min.js"></script>
+	<script>
+	VANTA.RINGS({
+  		el: "#head",
+  		mouseControls: true,
+		touchControls: true,
+		gyroControls: true,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		backgroundColor: 0x2a4564,
+		color: 0x20f09a
+	})
+	</script>
+
+	<!-- Vanta script for banner 2 -->
+	<script src="js/bootstrap/three.r119.min.js"></script>
+	<script src="js/bootstrap/vanta.net.min.js"></script>
+	<script>
+	VANTA.NET({
+	el: "#banner2",
+	mouseControls: true,
+	touchControls: true,
+	gyroControls: false,
+	minHeight: 200.00,
+	minWidth: 200.00,
+	scale: 1.00,
+	scaleMobile: 1.00
+	})
+	</script>
+
+</body>
+</html>
