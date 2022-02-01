@@ -54,25 +54,21 @@ a:hover {
 }
 
 #confbutton {
-	background-color: #1cdbbb;
-	border: none;
-	color: white;
-	position: absolute;
-	left: 38%;
-	bottom: -223%;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
-	font-size: 16px;
-	outline: 1px solid #ffffff;
-	transition: outline 1s cubic-bezier(0.33, 1, 0.68, 1) 0s;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: #346dca;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	height: 50px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
-
-#confbutton:hover {
-	outline: 4px solid #0ae960;
-}
-
 /* Navbar */
 
 .topnav {
