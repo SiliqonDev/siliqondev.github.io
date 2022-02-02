@@ -73,6 +73,7 @@ a:hover {
 	width: fit-content;
 	word-break: break-word;
 	border: 0;
+	padding-bottom: 2px;
 }
 
 @media (min-width: 768px) {
@@ -170,8 +171,8 @@ a:hover {
 #about {
 	margin: 10px;
 	text-align: center;
-	padding-top: 66px;
-	padding-bottom: 66px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #about h1 {
@@ -184,7 +185,7 @@ a:hover {
 #about .about-me {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 #about .about {
