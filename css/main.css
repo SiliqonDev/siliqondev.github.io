@@ -60,7 +60,7 @@ a:hover {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	background-color: #346dca;
+	background-color: #30bb53;
 	color: white;
 	font-size: 20px;
 	font-weight: bold;
@@ -69,6 +69,24 @@ a:hover {
 	text-decoration: none;
 	text-align: center;
 }
+
+#gitbutton {
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-color: #30bb53;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	height: 50px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+
 /* Navbar */
 
 .topnav {

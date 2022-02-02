@@ -34,6 +34,7 @@
 			  <a href="#portfolio">My Portfolio</a>
 			  <a href="https://discord.com/oauth2/authorize?client_id=912282357409648660&permissions=277025646672&scope=bot%20applications.commands">Invite RPG Bot</a>
 			  <a href="https://81urqu5a91w.typeform.com/to/NdBaXH8C">Contact Me</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 	</div>
 	<!-- End Navbar -->
@@ -171,7 +172,7 @@
 		<br>
 		<hr>
 		<br>
-		<a href="confportfolio.html"><button class="container" type="button" id="confbutton" name="confbutton">>> Click me to go to the configuration portfolio! <<</button></a>
+		<a href="confportfolio.html"><button class="container" type="button" id="confbutton" name="confbutton"> Configuration portfolio </button></a>
 		<br>
 	</section>
 		<br>
@@ -194,6 +195,19 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
+
+	<!-- Navbar Dropdown Script -->
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+	<!-- End Navbar Dropdown Script -->
 
 	<!-- Smooth Scrolling Script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
