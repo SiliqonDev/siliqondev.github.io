@@ -53,39 +53,40 @@ a:hover {
 	transition: all .2s ease-in;
 }
 
-#confbutton {
-	font-family: Arial, Helvetica, sans-serif;
-	display: inline-block;
-	max-width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	background-color: #30bb53;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	height: 40px;
+#portfoliobutton {
+	background: #5E5DF0;
+	border-radius: 999px;
+	box-shadow: #5E5DF0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
 	cursor: pointer;
-	text-decoration: none;
-	text-align: center;
+	font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
 }
 
-#gitbutton {
-	font-family: Arial, Helvetica, sans-serif;
-	display: inline-block;
-	max-width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	background-color: #30bb53;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	height: 40px;
-	cursor: pointer;
-	text-decoration: none;
-	text-align: center;
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
 }
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
 /* Navbar */
 
 .topnav {
