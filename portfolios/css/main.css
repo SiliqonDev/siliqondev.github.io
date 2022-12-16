@@ -53,51 +53,58 @@ a:hover {
 	transition: all .2s ease-in;
 }
 
+/* CSS */
 .custom_button {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 36px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-}
-
-.custom_button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.custom_button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.custom_button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
+	background-color: #3DD1E7;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+	display: flex;
+	font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1.75rem;
+	padding: .75rem 1.65rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none #000000 solid;
+	text-decoration-thickness: auto;
+	width: 100%;
+	max-width: 460px;
+	position: relative;
+	cursor: pointer;
+	transform: rotate(-2deg);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  .custom_button:focus {
+	outline: 0;
+  }
+  
+  .custom_button:after {
+	content: '';
+	position: absolute;
+	border: 1px solid #000000;
+	bottom: 4px;
+	left: 4px;
+	width: calc(100% - 1px);
+	height: calc(100% - 1px);
+  }
+  
+  .custom_button:hover:after {
+	bottom: 2px;
+	left: 2px;
+  }
+  
+  @media (min-width: 768px) {
+	.custom_button {
+	  padding: .75rem 3rem;
+	  font-size: 1.25rem;
+	}
+  }
 /* Navbar */
 
 .topnav {
@@ -187,17 +194,14 @@ a:hover {
 #portfolio h1 {
 	font-size: 55px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 #portfolio h2 {
 	font-size: 40px;
-	text-transform: uppercase;
 }
 
 #portfolio h3 {
 	font-size: 22px;
-	text-transform: uppercase;
 }
 
 #portfolio figcaption {
@@ -207,7 +211,6 @@ a:hover {
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
-	text-transform: uppercase;
   }
 
 #banner {
@@ -226,6 +229,10 @@ a:hover {
 	margin-top: 5px;
 	font-size: 20px;
 	color: white;
+}
+
+#vrooooom{
+	zoom: 90%;
 }
 
 @media screen and (min-width: 800px) {
@@ -304,4 +311,13 @@ footer a:hover {
 @media screen and (max-width: 799px) {
 	.res-img-sm {
 		width: 100%;	}
+}
+
+
+/* Cards */
+
+.card-img {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
 }
