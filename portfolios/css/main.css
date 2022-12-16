@@ -5,6 +5,7 @@ html{
     box-sizing:border-box;
     -ms-overflow-style:scrollbar
 }
+
 *,::after,::before{
     box-sizing:inherit
 }
@@ -14,6 +15,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 hr {
@@ -270,8 +272,8 @@ footer a:hover {
 	max-width: 1280px;
 	margin: 0 auto;
 	float: none;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 3px;
 }
 
 .contact-info {
@@ -318,6 +320,12 @@ footer a:hover {
 
 .card-img {
 	width: 100%;
-	height: 40vh;
+	height: 30vh;
+	object-fit: contain;
+}
+
+.card-img-top {
+	width: 100%;
+	height: 30vh;
 	object-fit: contain;
 }
