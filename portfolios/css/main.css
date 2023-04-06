@@ -237,6 +237,12 @@ a:hover {
 	zoom: 90%;
 }
 
+#reviews {
+	margin: 0;
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+}
+
 @media screen and (min-width: 800px) {
 	#gamemodes .img {
 		margin: 15px;
