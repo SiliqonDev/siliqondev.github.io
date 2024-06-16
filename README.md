@@ -1,4 +1,4 @@
-# wonky-dev.github.io
+# siliqondev.github.io
 
 - A website showing information about me and my work.
 
