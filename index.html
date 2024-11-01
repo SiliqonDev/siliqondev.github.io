@@ -1,359 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Siliqon Dev</title>
+    <head>
+        <title>Whats going on here?</title>
 
-	<!-- Meta Tag Stuff -->
-	<meta name="author" content="Siliqon Dev">
-	<meta name="description" content="Discord Bot Developer, Web Developer and Minecraft Developer. Want to hire me? message siliqon on discord.">
-	<meta name="keywords" content="Siliqon, SiliqonDev, Minecraft Developer, Python, HTML, CSS, Web Developer, Website Development, Website Developer">
-	<meta content="https://siliqondev.github.io/img/pepepat.png" property="og:image" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
+        <!-- meta -->
+        <meta name="author" content="SiliQon">
+        <meta name="description" content="hmm...">
+        <meta name="keywords" content="Siliqon, Minecraft Developer, Python, Java, Lua, Roblox Developer, Python Developer, Java Developer, Spigot Java Developer, Spigot, Bukkit, Minecraft, Web Developer">
+        <meta content="https://siliqondev.github.io/img/pepepat.png" property="og:image">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-
-	<!-- Favicon -->
-	<link rel="icon" href="img/pepepat.png">
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="img/pepepat.png">
+        
+	    <!-- Bootstrap -->
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	    <script src="js/bootstrap/bootstrap.min.js"></script>
 	
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	    <!-- Font Awesome -->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    </head>
+    <body bgcolor="#111" id="body"> 
+        <div class="card-row">
+            <div class="card-list">
+                <div class="nav">   
+                    <a href="#">Projects</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#" onclick="showSocials()">Socials</a>
+                </div>
+                <div class="card">
+                    <h1>| SiliQon</h1>
+                    <p class="card-text">I am a student who loves programming and testing things related with CS. I have been learning since 2018 and freelancing since 2020.<br><br>I have experience in working with Python3, Java for Minecraft Plugin Development, Lua for Roblox and a little with HTML/CSS/JS (this website!) and more...</p>
+                    <p class="card-footer">© SiliQon 2024 <a class="card-link" href="#tnc">ToS/TnC</a></p>
+                </div>
+            </div>
+            <div class="socials-list" id="info-card">
+                <a class="socials-button" href="https://discord.gg" target="_blank" rel="noopener noreferrer"><img src="img/discord.svg"></a>
+                <a class="socials-button" href="https://github.com/SiliqonDev" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"></a>
+                <img class="socials-button invis" src="img/back.svg">
+            </div>
+        </div>
 
-</head>
-<body>
-	<!-- Navbar -->
-	<div class="topnav" id="myTopnav">
-		<div class="max-width">
-			  <a href="#about">About Me</a>
-			  <a href="#portfolio">My Portfolio</a>
-			  <a href="#footer" target="_blank" rel="noopener noreferrer">Contact Me</a>
-			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>
-	</div>
-	<!-- End Navbar -->
+        <script type="text/javascript">
+            var socialsCard = document.getElementById("info-card");
+            var cardlist = document.getElementById("card-list");
 
-	<!-- Header (Banner) -->
-	<header id="head" class="parallax">
-		<h1><font color="white">I am a developer</font></h1>
-		<h3><font color="white">I can make discord bots, minecraft plugins, websites and more...</font></h3>
-	</header>
-	<!-- End Header -->
-
-	<!-- About Section -->
-	<section id="about">
-		<h1>About Me</h1>
-		<p>Some Information about me and what I can do</p>
-		<!-- First row -->
-		<div class="row about-me">
-			<div class="col">
-				<i class="fab fa-cloudscale about"></i>
-				<h2>I complete the work fast</h2>
-				<p>I complete the tasks very fast and with good quality and precision</p>
-			</div>
-			<div class="col">
-				<i class="fas fa-terminal about"></i>
-				<h2>Multiple language support</h2>
-				<p>I know how to work with Python, HTML and Java</p>
-			</div>
-			<div class="col">
-				<i class="fas fa-caret-down about"></i>
-				<h2>Check out my portfolio below!</h2>
-				<p>Scroll down a bit to have a look at some things I have made!</p>
-			</div>
-		</div>
-		<!-- End first row -->
-	</section>
-	<!-- End about section -->
-
-	<!-- Banner 1 -->
-	<section id="banner" class="parallax">
-		<h1>I am capable of doing a variety of tasks!</h1>
-		<h2>I can create Java Plugins, Discord Bots, setup Minecraft Servers, System Administration</h2>
-		<h2><i>and more...</i></h2>
-	</section>
-	<!-- End Banner 1 -->
-
-	<!-- Portfolio Section -->
-	<section id="portfolio" class="container">
-		<br>
-		<div class="row fixed-width">
-			<div class="item-image">
-				<center>
-					<img src="https://img.shields.io/badge/Python-323330?style=for-the-badge&logo=Python&logoColor=informational"> 
-					<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-					<img src="https://img.shields.io/badge/CSS-339933?style=for-the-badge&logo=css3&logoColor=white"> 
-					<img src="https://img.shields.io/badge/Java-323330?style=for-the-badge&logo=java&logoColor=white"> 
-					<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"> 
-					<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
-				</center>
-			</div>
-		</div>
-		<br>
-		<div class="row fixed-width">
-			<div class="col-md mode">
-				<h2><i class="fab fa-android"></i> RPG Discord Bot</h2>
-				<p>Have you ever wanted to play around with an extensive single player RPG bot right here in discord?<br>
-					<br>
-					Well wait no more! <i>cue RPGUnlimited bot.</i><br>
-					With this bot, you can live all the aspects of a medieval rpg life!<br>
-					Forage for fruits, chop trees, fight monsters in elaborate dungeons or just beg the townsfolk for a few doubloons<br>
-					<br>
-					<b>NOW CLOSED DOWN FOR PUBLIC SERVICE</b>
-				</p>
-			</div>
-			<div class="item-image">
-				<img class="res-img img-fluid" src="img/rpg_unlimited.png" alt="RPG UNLIMITED PICTURE">
-			</div>	
-		</div>
-	</section>
-		<br>
-		<hr>
-		<br>
-	<section class="container">
-		<div class="row fixed-width">
-			<div class="item-image">
-				<img class="res-img img-fluid" src="img/java-logo.png" alt="MEME MUSIC DISCS PICTURE">
-			</div>
-			<div class="col-md mode">
-				<h2><i class="fab fa-java"></i> Minecraft Plugin Development</h2>
-				<p><br>I can make Minecraft plugins using Java<br>
-					I can make plugins for any version from 1.8.8 to the latest<br>
-					<br>You can check out some plugins I have made on my <b><a href="/portfolios/pluginportfolio.html">plugin portfolio</a></b> page
-					<br><br>You can also contact me on discord if you want a custom plugin made
-					<br>for your Minecraft server or for private use!
-				</p>
-			</div>
-		</div>
-	</section>
-		<br>
-		<hr>
-		<br>
-	<section class="container">
-		<div class="row fixed-width">
-			<div class="col-md mode">
-				<h2><i class="fas fa-music"></i> Music Discs Resource Pack</h2>
-				<p>This resource pack changes the normal Minecraft music disc songs into meme songs!<br>
-					The changes made are as follows -<br>
-					<b>-</b> Mellohi --> Megalovania<br>
-					<b>-</b> Cat --> Rick Roll<br>
-					<b>-</b> Mall --> Tokyo Machine - ROCK IT<br>
-					<b>-</b> Disc 13 --> Tunak Tunak Tun<br>
-					<b>-</b> Blocks --> Karlson Vibe<br>
-					<b>-</b> Stal --> Soviet National Anthem<br>
-					<b>And many more...</b><br><br>
-					<a href="https://www.curseforge.com/minecraft/texture-packs/meme-music-discs" target="_blank" rel="noopener noreferrer"><b>Download here</b></a>
-				</p>
-			</div>
-			<div class="item-image">
-				<img class="res-img img-fluid" src="img/meme_music_discs.png" alt="MEME MUSIC DISCS PICTURE">
-			</div>
-		</div>
-	</section>
-		<br>
-		<hr>
-		<br>
-	<section class="container">
-		<div class="row fixed-width">
-				<div class="item-image">
-					<img class="res-img img-fluid" src="./img/html5css3.png" alt="HTML5 CSS3 PICTURE">
-				</div>
-			<div class="col-md mode">
-				<h2><i class="fab fa-html5"></i> This Website</h2>
-				<p>I made this website to showcase my portfolio, and this website is technically also a part of my portfolio!<br>
-					<br>
-					I can make single page scroller websites (like this one!), whole page scrollers, multiple page websites,
-					webstores for Minecraft servers, official websites for Minecraft servers (with forums) and many more...<br>
-					<br>
-					This website is responsive too, meaning it works perfectly on mobile devices as well.<br>
-					<br>
-					You can contact me via discord or the <b><a href="https://81urqu5a91w.typeform.com/to/NdBaXH8C" target="_blank" rel="noopener noreferrer">website form</a></b> for any queries.<br>
-				</p>
-			</div>
-		</div>
-	</section>
-		<br>
-		<hr>
-		<br>
-	<section class="container">
-		<div class="row fixed-width">
-			<div class="item-image">
-				<img class="res-img img-fluid" src="img/marvel_ores.png" alt="MARVEL ORES PICTURE">
-			</div>
-		<div class="col-md mode">
-			<h2><i class="fas fa-microchip"></i> Marvel Ores Mod</h2>
-			<p>This mod adds several of the metals from the MCU<br>
-				The 4 ores added are as follows -<br>
-				<b>-</b> Vibranium<br>
-				<b>-</b> Symbiote<br>
-				<b>-</b> Adamantium<br>
-				<b>-</b> Carbonadium<br>
-				<br>
-				Every ore has its own ingot/gem form along with armor/tool sets.<br>
-				Adamantium for example can only be used for weapons (sword, axe).<br>
-				Vibranium can be used for tools and armor and so on...<br>
-				<br>
-				<a href="https://www.curseforge.com/minecraft/mc-mods/marvel-ores" target="_blank" rel="noopener noreferrer"><b>Download here</b></a>
-			</p>
-		</div>
-	</div>
-	</section>
-	<br>
-	<br>
-	<div class="center">
-		<br><br><br>
-		<a href="/portfolios/pluginportfolio.html"><button class="custom_button" role="button" name="pluginbutton"> View Plugin Portfolio </button></a>
-	</div>
-	<br><br><br><br><br>
-	<!-- End Portfolio Section -->
-
-	<div class="center">
-		<h3>
-			By using my services or making a purchase you automatically accept my 
-			<a href="/tnc.html">Terms and Conditions</a>
-		</h3>
-	</div>
-	<br><br>
-
-	<!-- Review banner -->
-	<section id="banner2" class="parallax">
-		<h1>Like my services? Leave a Review!</h1>
-		<h2>Review section WIP</h3>
-	</section>
-	<!-- End Review Banner -->
-
-	<!-- Footer -->
-	<section id="footer">
-		<footer>
-			<div class="the-footer">
-				<div class="contact-info">
-					<p><i class="fab fa-discord"></i> siliqon</p>
-					<p><a href="https://github.com/SiliqonDev?repositories=" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> SiliqonDev</a></p>
-				</div>
-			</div>
-		</footer>
-	</section>
-	<!-- End Footer -->
-
-	<!-- Navbar Dropdown Script -->
-	<script>
-		function myFunction() {
-		    var x = document.getElementById("myTopnav");
-		    if (x.className === "topnav") {
-		        x.className += " responsive";
-		    } else {
-		        x.className = "topnav";
-		    }
-		}
-	</script>
-	<!-- End Navbar Dropdown Script -->
-
-	<!-- Smooth Scrolling Script -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-
-		    if (this.hash !== "") {
-		      event.preventDefault();
-
-		      // Store hash
-		      var hash = this.hash;
-
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 100, function(){
-
-		        window.location.hash = hash;
-		      });
-		    }
-		  });
-		});
-	</script>
-	<!-- End Smooth Scrolling Script -->
-
-	<!-- buymeacoffee.com script -->
-	<!--
-	<script 
-	data-name="BMC-Widget" 
-	data-cfasync="false" 
-	src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-	data-id="SiliqonDev" -- change username there 
-	data-description="Support me on Buy me a coffee!" 
-	data-message="Thank you for visiting my website. If you would like to support my work, you can buy me a coffee!" 
-	data-color="#40DCA5" 
-	data-position="Right" 
-	data-x_margin="18" 
-	data-y_margin="18">
-	</script>
-	-->
-	<!-- end of buymeacoffee.com script -->
-
-	<!-- Vanta script for head section -->
-	<script src="js/bootstrap/three.r134.min.js"></script>
-	<script src="js/bootstrap/vanta.birds.min.js"></script>
-	<script>
-	VANTA.BIRDS({
-	  el: "#head",
-	  mouseControls: true,
-	  touchControls: true,
-	  gyroControls: false,
-	  minHeight: 200.00,
-	  minWidth: 200.00,
-	  scale: 1.00,
-	  scaleMobile: 1.00,
-	  seperation: 25.00,
-	  birdSize: 1,
-	  speedLimit: 6
-	})
-	</script>
-
-	<!-- Vanta script for banner 1 -->
-	<script src="js/bootstrap/three.r119.min.js"></script>
-	<script src="js/bootstrap/vanta.waves.min.js"></script>
-	<script>
-	VANTA.WAVES({
-	el: "#banner",
-	mouseControls: true,
-	touchControls: true,
-	gyroControls: false,
-	minHeight: 200.00,
-	minWidth: 200.00,
-	scale: 1.0,
-	scaleMobile: 1.00,
-	color: 0x7822c,
-	shininess: 0,
-	waveHeight: 20.00,
-	waveSpeed: 0.75,
-	zoom: 0.8
-	})
-	</script>
-
-	<!-- Vanta script for banner 2 -->
-	<script src="js/bootstrap/three.r134.min.js"></script>
-	<script src="js/bootstrap/vanta.globe.min.js"></script>
-	<script>
-	VANTA.GLOBE({
-	  el: "#banner2",
-	  mouseControls: true,
-	  touchControls: true,
-	  gyroControls: false,
-	  minHeight: 200.00,
-	  minWidth: 200.00,
-	  scale: 1.0,
-	  scaleMobile: 1.00
-	})
-	</script>
-
-</body>
+            function showSocials() {
+                socialsCard.style = `
+                opacity:1;
+                margin:0;
+                z-index:99;
+                `;
+            }
+        </script>
+    </body>
 </html>
