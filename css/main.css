@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
   
     width: 700px;
-    height: 400px;
+    height: 420px;
     
     padding: 35px;
 
@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left:-9rem;
     z-index:-1;
     transition: opacity .3s .25s ease-in-out, margin .3s ease-in-out;
-    height: calc(455px + 1rem);
+    height: calc(475px + 1rem);
     width: 8rem;
 
     padding: 50px 25px 35px 25px;
@@ -179,10 +179,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 850px) {
     .custom-card {
-        max-width: 490px;
-        min-width: 400px;
-
-        height: 250px;
+        width: 490px;
+        height: 300px;
 
         padding: 20px;
     }
@@ -206,10 +204,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 600px) {
     .custom-card {
-        max-width: 400px;
-        min-width: 300px;
-
-        height: 200px;
+        width: 400px;
+        height: 240px;
 
         padding: 17px;
     }
@@ -232,10 +228,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 400px) {
     .custom-card {
-        max-width: 300px;
-        min-width: 200px;
-
-        height: 150px;
+        width: 300px;
+        height: 170px;
 
         padding: 10px;
     }
