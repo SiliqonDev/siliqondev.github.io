@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
     gap: 1rem
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .custom-card-list {
         gap: .5rem;
     }
@@ -177,7 +177,7 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .custom-card {
         max-width: 490px;
         min-width: 400px;
@@ -294,7 +294,7 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .custom-nav {
         width: 490px;
         height: 40px;
