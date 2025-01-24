@@ -22,34 +22,53 @@
         <link rel="icon" href="img/pepepat.png">
         
 	    <!-- Bootstrap -->
-	    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 	    <script src="js/bootstrap/bootstrap.min.js"></script>
 	
 	    <!-- Font Awesome -->
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     </head>
     <body bgcolor="#111" id="body"> 
-        <div class="card-row">
-            <div class="card-list">
-                <div class="nav">   
-                    <a href="#">Portfolio</a>
+        <!-- Modal -->
+        <div class="modal fade" id="discordModal" tabindex="-1" role="dialog" aria-labelledby="discordModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="text-light bg-dark modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="discordModalLongTitle">Contact Through Discord</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>In order to contact me through discord, please send a friend request to `siliqon`.<br>
+                        I usually accept friend requests within a day.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-card-row">
+            <div class="custom-card-list">
+                <div class="custom-nav blur">   
+                    <a href="/portfolio.html">Portfolio</a>
                     <a href="/reviews.html">Reviews</a>
                     <a href="#" onclick="showSocials()">Socials</a>
                 </div>
-                <div class="card">
+                <div class="custom-card blur">
                     <h1>| SiliQon</h1>
-                    <p class="card-text">I am a student who loves programming and testing things related with CS. I have been learning since 2018 and freelancing since 2020.<br><br>I have experience in working with Python3, Java for Minecraft Plugin Development, Lua for Roblox and a little with HTML/CSS/JS (this website!) and more...</p>
-                    <p class="card-footer">© SiliQon 2025 <a class="card-link" href="#tnc">ToS/TnC</a></p>
+                    <p class="custom-card-text">I am a student who loves programming and testing things related with CS. I have been learning since 2018 and freelancing since 2020.<br><br>I have experience in working with Python3, Java for Minecraft Plugin Development, Lua for Roblox and a little with HTML/CSS/JS (this website!) and more...</p>
+                    <p class="custom-card-footer float-left">© SiliQon 2025 <a class="float-right custom-card-link" href="#tnc">ToS/TnC</a></p>
                 </div>
             </div>
-            <div class="socials-list" id="info-card">
-                <a class="socials-button" href="https://discord.gg" target="_blank" rel="noopener noreferrer"><img src="img/discord.svg"></a>
+            <div class="socials-list blur" id="info-card">
+                <a class="socials-button" data-toggle="modal" href="#discordModal"><img src="img/discord.svg"></a>
                 <a class="socials-button" href="https://github.com/SiliqonDev" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"></a>
                 <img class="socials-button invis" src="img/back.svg">
             </div>
         </div>
-
-
 
         <script type="text/javascript">
             var socialsCard = document.getElementById("info-card");

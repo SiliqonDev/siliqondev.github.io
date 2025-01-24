@@ -30,8 +30,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #222;
-
-
 }
 
 p {
@@ -50,6 +48,10 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 }
 
+.blur {
+    backdrop-filter: blur(.2rem);
+}
+
 .invis {
     opacity: 0;
 }
@@ -64,18 +66,16 @@ h1,h2,h3,h4,h5,h6 {
     
     padding: 35px;
 
-    border: 1px solid rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4); /* 77, 4, 89 */
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
-
-    backdrop-filter: blur(.3rem);
 
     gap: 3rem;
     margin: 0;
 }
 
-.card-list {
+.custom-card-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,7 +85,7 @@ h1,h2,h3,h4,h5,h6 {
     gap: 1rem;
 }
 
-.card-row {
+.custom-card-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,13 +95,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (max-width: 800px) {
-    .card-list {
+    .custom-card-list {
         gap: .5rem;
     }
-    .card-row {
+    .custom-card-row {
         flex-direction: column;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .socials-list {
         flex-direction: row;
@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 @media screen and (max-width: 600px) {
-    .card-row {
+    .custom-card-row {
         gap: .75rem;
     }
     .socials-list {
@@ -117,8 +117,8 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 @media screen and (max-width: 400px) {
-    .card-row {
-        gap: .75rem;
+    .custom-card-row {
+        gap: .5rem;
     }
     .socials-list {
         gap: 6rem;
@@ -126,22 +126,20 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* info card */
-.card {
+.custom-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   
-    width: 600px;
-    height: 350px;
+    width: 700px;
+    height: 400px;
     
     padding: 35px;
 
-    border: 1px solid rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);   
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
-
-    backdrop-filter: blur(.3rem);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 }
 
 #info-card {
@@ -149,13 +147,13 @@ h1,h2,h3,h4,h5,h6 {
     margin-left:-9rem;
     z-index:-1;
     transition: opacity .3s .25s ease-in-out, margin .3s ease-in-out;
-    height: calc(400px + 1rem);
+    height: calc(455px + 1rem);
     width: 8rem;
 
     padding: 35px 25px 35px 25px;
 }
 
-.card h1 {
+.custom-card h1 {
     text-transform: capitalize;
     padding: 0;
     margin: 0;
@@ -164,25 +162,24 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
 }
 
-.card-text {
+.custom-card-text {
     font-size: 1.1em;
     color: #fff;
 }
 
-.card-footer {
+.custom-card-footer {
     font-size: .9em;
     color: #aaa;
 }
 
-.card-link {
+.custom-card-link, .custom-card-link:hover {
     font-size: 1em;
     color: #aaa;
-    margin-left: 25em;
     text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
-    .card {
+    .custom-card {
         max-width: 490px;
         min-width: 400px;
 
@@ -197,19 +194,19 @@ h1,h2,h3,h4,h5,h6 {
         width: 490px;
         padding: 7px 50px 7px 50px;
     }
-    .card h1 {
+    .custom-card h1 {
         font-size: 1.8em;
     }
-    .card-text {
+    .custom-card-text {
         font-size: .9em;
     }
-    .card-footer {
+    .custom-card-footer {
         font-size: .6em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .card {
+    .custom-card {
         max-width: 400px;
         min-width: 300px;
 
@@ -223,19 +220,19 @@ h1,h2,h3,h4,h5,h6 {
         height: 3.5rem;
         width: 400px;
     }
-    .card h1 {
+    .custom-card h1 {
         font-size: 1.5em;
     }
-    .card-text {
+    .custom-card-text {
         font-size: .725em;
     }
-    .card-footer {
+    .custom-card-footer {
         font-size: .5em;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .card {
+    .custom-card {
         max-width: 300px;
         min-width: 200px;
 
@@ -250,40 +247,38 @@ h1,h2,h3,h4,h5,h6 {
         width: 300px;
         padding: 7px 30px 7px 30px;
     }
-    .card h1 {
+    .custom-card h1 {
         font-size: 1.2em;
     }
-    .card-text {
+    .custom-card-text {
         font-size: .5em;
     }
-    .card-footer {
+    .custom-card-footer {
         font-size: .4em;
     }
 }
 
 /* nav */
 
-.nav {
+.custom-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    width: 600px;
-    height: 50px;
+    width: 700px;
+    height: 55px;
 
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
 
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
-
-    backdrop-filter: blur(.3rem);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 }
 
-.nav a, .nav a:hover {
+.custom-nav a, .custom-nav a:hover {
     display: flex;
     text-decoration: none;
     font-weight: bold;
@@ -301,40 +296,40 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (max-width: 800px) {
-    .nav {
+    .custom-nav {
         width: 490px;
-        height: 35px;
+        height: 40px;
         border-radius: 9px;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
-    .nav a {
+    .custom-nav a, .custom-nav a:hover {
         font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .nav {
+    .custom-nav {
         width: 400px;
-        height: 30px;
+        height: 35px;
         border-radius: 8px;
-        padding-right: 25px;
-        padding-left: 25px;
+        padding-right: 45px;
+        padding-left: 45px;
     }
-    .nav a {
+    .custom-nav a, .custom-nav a:hover {
         font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .nav {
+    .custom-nav {
         width: 300px;
-        height: 25px;
+        height: 30px;
         border-radius: 7px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 35px;
+        padding-left: 35px;
     }
-    .nav a {
+    .custom-nav a, .custom-nav a:hover {
         font-size: 1em;
     }
 }

@@ -26,7 +26,7 @@ body {
     min-height: 100vh;
     margin: 0;
 
-    background-image: url("../img/background.svg");
+    background-image: url("../img/reviews-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #222;
@@ -49,6 +49,25 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 }
 
+#client-testimonial-carousel {
+    height:250px;
+}
+@media screen and (max-width:800px) {
+    #client-testimonial-carousel {
+        height: 225px;
+    }
+}
+@media screen and (max-width:600px) {
+    #client-testimonial-carousel {
+        height: 200px;
+    }
+}
+@media screen and (max-width:450px) {
+    #client-testimonial-carousel {
+        height: 190px;
+    }
+}
+
 .card-list {
     display: flex;
     flex-direction: column;
@@ -58,21 +77,31 @@ h1,h2,h3,h4,h5,h6 {
 
     gap: 1rem;
 }
+@media screen and (max-width:800px) {
+    .card-list {
+        gap: .75rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .card-list {
+        gap: .6rem;
+    }
+}
 
 .reviews-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   
-    width: 700px;
+    width: 650px;
     height: 350px;
     
     padding: 35px;
 
-    border: 1px solid rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);   
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 
     backdrop-filter: blur(.3rem);
 }
@@ -105,10 +134,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 800px) {
     .reviews-card {
-        max-width: 550px;
-        min-width: 400px;
-
-        height: 250px;
+        width: 500px;
+        height: 300px;
 
         padding: 20px;
     }
@@ -125,10 +152,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 600px) {
     .reviews-card {
-        max-width: 420px;
-        min-width: 300px;
-
-        height: 200px;
+        width: 400px;
+        height: 260px;
 
         padding: 17px;
     }
@@ -145,10 +170,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 450px) {
     .reviews-card {
-        max-width: 350px;
-        min-width: 200px;
-
-        height: 150px;
+        width: 310px;
+        height: 200px;
 
         padding: 10px;
     }
@@ -171,18 +194,18 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
     align-items: center;
 
-    width: 600px;
+    width: 650px;
     height: 50px;
 
     padding-right: 140px;
     padding-left: 140px;
 
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(.3rem);
 }
 
 .custom-nav a, .custom-nav a:hover {
@@ -204,7 +227,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 800px) {
     .custom-nav {
-        width: 490px;
+        width: 500px;
         height: 40px;
         border-radius: 9px;
         padding-right: 110px;
@@ -230,8 +253,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 450px) {
     .custom-nav {
-        width: 330px;
-        height: 30px;
+        width: 310px;
+        height: 35px;
         border-radius: 7px;
         padding-right: 80px;
         padding-left: 80px;
