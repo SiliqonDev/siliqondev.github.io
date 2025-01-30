@@ -79,8 +79,8 @@ h1,h2,h3,h4,h5,h6 {
     width: 600px;
     height: 50px;
 
-    padding-right: 140px;
-    padding-left: 140px;
+    padding-right: 70px;
+    padding-left: 70px;
 
     border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
@@ -112,8 +112,8 @@ h1,h2,h3,h4,h5,h6 {
         width: 500px;
         height: 45px;
         border-radius: 9px;
-        padding-right: 110px;
-        padding-left: 110px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
     .main-nav a, .main-nav a:hover {
         font-size: 1.5em;
@@ -125,8 +125,8 @@ h1,h2,h3,h4,h5,h6 {
         width: 400px;
         height: 45px;
         border-radius: 8px;
-        padding-right: 95px;
-        padding-left: 95px;
+        padding-right: 45px;
+        padding-left: 45px;
     }
     .main-nav a, .main-nav a:hover {
         font-size: 1.2em;
@@ -138,8 +138,8 @@ h1,h2,h3,h4,h5,h6 {
         width: 300px;
         height: 40px;
         border-radius: 7px;
-        padding-right: 70px;
-        padding-left: 70px;
+        padding-right: 35px;
+        padding-left: 35px;
     }
     .main-nav a, .main-nav a:hover {
         font-size: 1.1em;

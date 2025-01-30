@@ -93,8 +93,8 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     justify-content: space-between;
   
-    width: 650px;
-    height: 350px;
+    width: 700px;
+    height: 400px;
     
     padding: 35px;
 
@@ -134,8 +134,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 800px) {
     .reviews-card {
-        width: 500px;
-        height: 300px;
+        width: 550px;
+        height: 350px;
 
         padding: 20px;
     }
@@ -152,8 +152,8 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 600px) {
     .reviews-card {
-        width: 400px;
-        height: 260px;
+        width: 450px;
+        height: 310px;
 
         padding: 17px;
     }
@@ -171,7 +171,7 @@ h1,h2,h3,h4,h5,h6 {
 @media screen and (max-width: 450px) {
     .reviews-card {
         width: 310px;
-        height: 200px;
+        height: 250px;
 
         padding: 10px;
     }
@@ -194,11 +194,11 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
     align-items: center;
 
-    width: 650px;
+    width: 700px;
     height: 50px;
 
-    padding-right: 140px;
-    padding-left: 140px;
+    padding-right: 70px;
+    padding-left: 70px;
 
     border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
@@ -227,11 +227,11 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 800px) {
     .custom-nav {
-        width: 500px;
+        width: 550px;
         height: 40px;
         border-radius: 9px;
-        padding-right: 110px;
-        padding-left: 110px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
     .custom-nav a, .custom-nav a:hover {
         font-size: 1.5em;
@@ -240,11 +240,11 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 600px) {
     .custom-nav {
-        width: 400px;
+        width: 450px;
         height: 35px;
         border-radius: 8px;
-        padding-right: 95px;
-        padding-left: 95px;
+        padding-right: 45px;
+        padding-left: 45px;
     }
     .custom-nav a, .custom-nav a:hover {
         font-size: 1.2em;
@@ -256,8 +256,8 @@ h1,h2,h3,h4,h5,h6 {
         width: 310px;
         height: 35px;
         border-radius: 7px;
-        padding-right: 80px;
-        padding-left: 80px;
+        padding-right: 35px;
+        padding-left: 35px;
     }
     .custom-nav a, .custom-nav a:hover {
         font-size: 1em;

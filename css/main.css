@@ -26,7 +26,7 @@ body {
     min-height: 100vh;
     margin: 0;
 
-    background-image: url("../img/background.svg");
+    background-image: url("../img/background-low.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #222;
@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blur {
-    backdrop-filter: blur(.2rem);
+    /* backdrop-filter: blur(1rem); */
 }
 
 .invis {
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid rgba(255, 255, 255, .05);
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4); /* 77, 4, 89 */
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 
     gap: 3rem;
     margin: 0;
