@@ -26,10 +26,11 @@ body {
     min-height: 100vh;
     margin: 0;
 
-    background-image: url("../img/background.svg");
+    background-image: url("../img/reviews-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #222;
+    
 }
 
 p {
@@ -48,34 +49,26 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 }
 
-.blur {
-    /* backdrop-filter: blur(1rem); */
+#client-testimonial-carousel {
+    height:250px;
+}
+@media screen and (max-width:800px) {
+    #client-testimonial-carousel {
+        height: 225px;
+    }
+}
+@media screen and (max-width:600px) {
+    #client-testimonial-carousel {
+        height: 200px;
+    }
+}
+@media screen and (max-width:450px) {
+    #client-testimonial-carousel {
+        height: 190px;
+    }
 }
 
-.invis {
-    opacity: 0;
-}
-
-.socials-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    width: 600px;
-    height: 350px;
-    
-    padding: 35px;
-
-    border: 1px solid rgba(255, 255, 255, .05);
-    border-radius: 10px;
-    background-color: rgba(11, 11, 11, 0.4); /* 77, 4, 89 */
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
-
-    gap: 3rem;
-    margin: 0;
-}
-
-.custom-card-list {
+.card-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,54 +77,24 @@ h1,h2,h3,h4,h5,h6 {
 
     gap: 1rem;
 }
-
-.custom-card-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-
-    gap: 1rem
-}
-
-@media screen and (max-width: 850px) {
-    .custom-card-list {
-        gap: .5rem;
-    }
-    .custom-card-row {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .socials-list {
-        flex-direction: row;
-        gap: 10rem;
-    }
-}
-@media screen and (max-width: 600px) {
-    .custom-card-row {
+@media screen and (max-width:800px) {
+    .card-list {
         gap: .75rem;
     }
-    .socials-list {
-        gap: 8rem;
-    }
 }
-@media screen and (max-width: 400px) {
-    .custom-card-row {
-        gap: .5rem;
-    }
-    .socials-list {
-        gap: 6rem;
+@media screen and (max-width:600px) {
+    .card-list {
+        gap: .6rem;
     }
 }
 
-.custom-card {
+.reviews-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   
     width: 700px;
-    height: 420px;
+    height: 400px;
     
     padding: 35px;
 
@@ -139,20 +102,11 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);   
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
+
+    backdrop-filter: blur(.3rem);
 }
 
-#info-card {
-    opacity:0;
-    margin-left:-9rem;
-    z-index:-1;
-    transition: opacity .3s .25s ease-in-out, margin .3s ease-in-out;
-    height: calc(475px + 1rem);
-    width: 8rem;
-
-    padding: 50px 25px 35px 25px;
-}
-
-.custom-card h1 {
+.reviews-card h1 {
     text-transform: capitalize;
     padding: 0;
     margin: 0;
@@ -161,92 +115,73 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
 }
 
-.custom-card-text {
-    font-size: 1.1em;
+.reviews-card-text {
+    font-size: 1em;
     color: #fff;
 }
 
-.custom-card-footer {
+.reviews-card-footer {
     font-size: .9em;
     color: #aaa;
 }
 
-.custom-card-link, .custom-card-link:hover {
+.reviews-card-link {
     font-size: 1em;
     color: #aaa;
+    margin-left: 25em;
     text-decoration: none;
 }
 
-@media screen and (max-width: 850px) {
-    .custom-card {
-        width: 490px;
-        height: 300px;
+@media screen and (max-width: 800px) {
+    .reviews-card {
+        width: 550px;
+        height: 350px;
 
         padding: 20px;
     }
-    #info-card {
-        margin-left: 0;
-        margin-top:-6rem;
-        height: 4rem;
-        width: 490px;
-        padding: 7px 50px 7px 50px;
-    }
-    .custom-card h1 {
+    .reviews-card h1 {
         font-size: 1.8em;
     }
-    .custom-card-text {
+    .reviews-card-text {
         font-size: .9em;
     }
-    .custom-card-footer {
+    .reviews-card-footer {
         font-size: .6em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .custom-card {
-        width: 400px;
-        height: 240px;
+    .reviews-card {
+        width: 450px;
+        height: 310px;
 
         padding: 17px;
     }
-    #info-card {
-        margin-left: 0;
-        margin-top:-4rem;
-        height: 3.5rem;
-        width: 400px;
-    }
-    .custom-card h1 {
+    .reviews-card h1 {
         font-size: 1.5em;
     }
-    .custom-card-text {
+    .reviews-card-text {
         font-size: .725em;
     }
-    .custom-card-footer {
+    .reviews-card-footer {
         font-size: .5em;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .custom-card {
-        width: 300px;
-        height: 170px;
+@media screen and (max-width: 450px) {
+    .reviews-card {
+        width: 310px;
+        height: 250px;
 
         padding: 10px;
     }
-    #info-card {
-        margin-left: 0;
-        margin-top:-3.5rem;
-        height: 3rem;
-        width: 300px;
-        padding: 7px 30px 7px 30px;
-    }
-    .custom-card h1 {
+    .reviews-card h1 {
         font-size: 1.2em;
     }
-    .custom-card-text {
-        font-size: .5em;
+    .reviews-card-text {
+        font-size: .6em;
     }
-    .custom-card-footer {
+    .reviews-card-footer {
         font-size: .4em;
     }
 }
@@ -260,7 +195,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 
     width: 700px;
-    height: 55px;
+    height: 50px;
 
     padding-right: 70px;
     padding-left: 70px;
@@ -269,6 +204,8 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
+
+    backdrop-filter: blur(.3rem);
 }
 
 .custom-nav a, .custom-nav a:hover {
@@ -288,9 +225,9 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 0
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
     .custom-nav {
-        width: 490px;
+        width: 550px;
         height: 40px;
         border-radius: 9px;
         padding-right: 60px;
@@ -303,7 +240,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 600px) {
     .custom-nav {
-        width: 400px;
+        width: 450px;
         height: 35px;
         border-radius: 8px;
         padding-right: 45px;
@@ -314,10 +251,10 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .custom-nav {
-        width: 300px;
-        height: 30px;
+        width: 310px;
+        height: 35px;
         border-radius: 7px;
         padding-right: 35px;
         padding-left: 35px;
@@ -325,20 +262,4 @@ h1,h2,h3,h4,h5,h6 {
     .custom-nav a, .custom-nav a:hover {
         font-size: 1em;
     }
-}
-
-.socials-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    height: auto;
-    width: auto;
-    z-index: 100;
-    transition: all .3s ease-in-out;
-
-    filter: invert(90%);
-}
-.socials-button:hover {
-    filter: invert(30%);
 }
