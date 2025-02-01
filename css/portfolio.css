@@ -49,24 +49,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #client-testimonial-carousel {
-    height: 500px;
+    height: 520px;
 }
 @media screen and (max-width:1150px) {
     #client-testimonial-carousel {
-        height: 475px
+        height: 500px
     }
 }
-@media screen and (max-width:950px) {
-    #client-testimonial-carousel {
-        height: 450px
-    }
-}
-
-/*
-.plugin-image {
-    max-width: 56%;
-}
-    */
 
 /* nav */
 
