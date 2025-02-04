@@ -88,6 +88,20 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.carousel-inner {
+    margin-top: 3rem;
+}
+@media screen and (max-width:800px) {
+    .carousel-inner {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .carousel-inner {
+        margin-top: 1rem;
+    }
+}
+
 .reviews-card {
     display: flex;
     flex-direction: column;
