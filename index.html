@@ -76,24 +76,29 @@
             </div>
         </section>
 
-        <section class="contacts-card fixed-top mx-auto mt-5">
+        <section class="contacts-card fixed-top ml-auto mr-auto">
             <a class="contacts-button" href="https://discord.gg/sy2SV5j6c8" target="_blank" rel="noopener noreferrer"><img src="./img/discord.svg"></a>
             <a class="contacts-button" href="https://github.com/SiliqonDev" target="_blank" rel="noopener noreferrer"><img src="./img/github.svg"></a>
-            <a class="contacts-button" href="https://wiki.wonkydev.com" target="_blank" rel="noopener noreferrer"><img src="./img/gitbook.svg"></a>
+            <a class="contacts-button" href="https://wiki.siliqon.dev" target="_blank" rel="noopener noreferrer"><img src="./img/gitbook.svg"></a>
         </section>
 
 
         <script type="text/javascript">
-            var socialsCard = document.getElementsByClassName("contact-card")[0];
+            var socialsCard = document.getElementsByClassName("contacts-card")[0];
             var cardlist = document.getElementById("card-list");
 
-            function showSocials() {
+            setTimeout(() => {
                 socialsCard.style = `
-                opacity:1;
-                margin:0;
-                z-index:99;
+                margin-top: 4rem;
                 `;
-            }
+            }, 1000)
+            setTimeout(() => {
+                socialsCard.style = `
+                transition: all 1s ease-in-out;
+                margin-top: 3.5rem;
+                width: 55%;
+                `;
+            }, 1500)
         </script>
     </body>
 </html>
