@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blur {
-    backdrop-filter: blur(.2rem);
+    /* backdrop-filter: blur(.1rem); */
 }
 
 .custom-card-list {
