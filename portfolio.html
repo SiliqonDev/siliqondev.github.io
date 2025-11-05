@@ -12,6 +12,7 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="./css/shared.css">
 
         <!-- Font -->
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -38,11 +39,18 @@
                 <a class="text-muted">Portfolio</a>
                 <a href="./reviews.html">Reviews</a>
             </div>
+
+            <section class="contacts-card fixed-top ml-auto mr-auto">
+                <a class="contacts-button" href="https://discord.gg/sy2SV5j6c8" target="_blank" rel="noopener noreferrer"><img src="./img/discord.svg"></a>
+                <a class="contacts-button" href="https://github.com/SiliqonDev" target="_blank" rel="noopener noreferrer"><img src="./img/github.svg"></a>
+                <a class="contacts-button" href="https://siliqons-organization.gitbook.io/siliqon-wiki/" target="_blank" rel="noopener noreferrer"><img src="./img/gitbook.svg"></a>
+            </section>
+
             <section class="portfolio-main-card">
                 <div class="row">
 
                     <!-- carousel of triplets -->
-                    <div id="client-testimonial-carousel" class="carousel slide carousel-triple d-none" data-interval="9000" data-ride="carousel">
+                    <div id="portfolio-carousel" class="carousel slide carousel-triple d-none" data-interval="9000" data-ride="carousel">
 
                         <!-- project slideshow -->
                         <div class="carousel-inner" role="listbox">
@@ -54,7 +62,7 @@
                                         <img class="card-img-top mx-auto pt-2" src="img/logos/MC-Java.png" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Hyping Studio</h5>
-                                            <p class="card-text">Hyping Studio is the force behind one of the biggest French Minecraft servers. I work with them to create custom plugins to push the boundaries of whats possible in Vanilla Minecraft!</p>
+                                            <p class="card-text">Hyping Studio is the force behind one of the biggest French Minecraft servers. I work with them to create custom plugins to push the boundaries of what is possible in Minecraft!</p>
                                         </div>
                                         <div class="card-footer">
                                             <small class="text-muted">
@@ -67,7 +75,7 @@
                                         <img class="card-img-top mx-auto pt-2" src="img/logos/Roblox-Lua.png" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">King's Gambit</h5>
-                                            <p class="card-text">An up and coming game studio based around producing top tier Roblox experiences. I worked with them on scripting UI and custom backend systems using Lua.</p>
+                                            <p class="card-text">An indie roblox game studio based around creating quality games. I worked with them on scripting UI and custom backend systems using Roblox Luau.</p>
                                         </div>
                                         <div class="card-footer">
                                             <small class="text-muted">
@@ -80,7 +88,7 @@
                                         <img class="card-img-top mx-auto pt-2" src="img/logos/WebDev.png" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">This Website!</h5>
-                                            <p class="card-text">A multi-page, responsive, portfolio and showcase website built by yours truly.
+                                            <p class="card-text">A multipage, responsive, portfolio and showcase website built by yours truly.
                                                 The website is built using HTML/CSS/JS and makes use of bootstrap and popper.js
                                                 </p>
                                         </div>
@@ -157,11 +165,27 @@
                                             </small>
                                         </div>
                                     </div>
-                                    <div class="card bg-dark text-light" style="border-radius: 10px; opacity: 0">
-                                        
+                                    <div class="card bg-dark text-light" style="border-radius: 10px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">COMING SOON!</h5>
+                                            <p class="card-text">I have some big plans for the future, and I cant wait to put them on this card!</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted">
+                                                <a class="float-right">Soon™</a>
+                                            </small>
+                                        </div>
                                     </div>
-                                    <div class="card bg-dark text-light" style="border-radius: 10px; opacity: 0">
-                                        
+                                    <div class="card bg-dark text-light" style="border-radius: 10px">
+                                        <div class="card-body">
+                                            <h5 class="card-title">COMING SOON?</h5>
+                                            <p class="card-text">Woah! Slow down there bud, I can only work on so many 'Coming soon's at once.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted">
+                                                <a class="float-right">Soon™</a>
+                                            </small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -170,15 +194,15 @@
                         
                         <!-- indicators for carousel -->
                         <ol class="carousel-indicators">
-                            <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="2"></li>
                         </ol> 
                     </div>
                     <!-- end triplets -->
 
                     <!-- carousel of doubles -->
-                    <div id="client-testimonial-carousel" class="carousel slide carousel-double d-none" data-interval="6000" data-ride="carousel">
+                    <div id="portfolio-carousel" class="carousel slide carousel-double d-none" data-interval="6000" data-ride="carousel">
 
                         <!-- project slideshow -->
                         <div class="carousel-inner" role="listbox">
@@ -280,15 +304,15 @@
 
                         <!-- indicators for carousel -->
                         <ol class="carousel-indicators">
-                            <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="2"></li>
                         </ol>
                     </div>
                     <!-- end doubles -->
 
                     <!-- carousel of singles -->
-                    <div id="client-testimonial-carousel" class="carousel slide carousel-single d-none" data-interval="4500" data-ride="carousel">
+                    <div id="portfolio-carousel" class="carousel slide carousel-single d-none" data-interval="4500" data-ride="carousel">
 
                         <!-- project slideshow -->
                         <div class="carousel-inner" role="listbox">
@@ -396,11 +420,11 @@
 
                         <!-- indicators for carousel -->
                         <ol class="carousel-indicators">
-                            <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="3"></li>
-                            <li data-target="#client-testimonial-carousel" data-slide-to="4"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="3"></li>
+                            <li data-target="#portfolio-carousel" data-slide-to="4"></li>
                         </ol>
                     </div>
                     <!-- end singles -->

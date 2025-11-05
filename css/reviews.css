@@ -1,54 +1,3 @@
-@-ms-viewport{
-    width:device-width
-}
-html{
-    box-sizing:border-box;
-    -ms-overflow-style:scrollbar
-}
-
-*,::after,::before{
-    box-sizing: border-box;
-}
-
-html,body {
-    font-family: 'PT Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    min-height: 100vh;
-    margin: 0;
-
-    background-image: url("../img/reviews-background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #222;
-    
-}
-
-p {
-	font-family: 'PT Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-p:not(:last-child) {
-    margin-bottom: 1.5em;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'PT Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
 #client-testimonial-carousel {
     height:290px;
 }
@@ -117,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: rgba(11, 11, 11, 0.4);   
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
 
-    backdrop-filter: blur(.3rem);
+    backdrop-filter: blur(0rem);
 }
 
 .reviews-card h1 {
@@ -218,8 +167,6 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
     background-color: rgba(11, 11, 11, 0.4);;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .15);
-
-    backdrop-filter: blur(.3rem);
 }
 
 .custom-nav a, .custom-nav a:hover {
